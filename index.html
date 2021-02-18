@@ -5,60 +5,68 @@
 layout: default
 ---
 
-<section id="hero" class="position-relative p-3 p-md-5 text-center">
-    <div class="row" style="height: 100%;">
-        <div class="col col-12 col-xl-8 mx-auto align-self-end">
-            <p class="text-left wow slideInLeft">
+<section id="hero" class="position-relative text-center p-3 p-md-5">
+    <div class="row h-100">
+        <div id="hero-text" class="col-12 col-xl-8 mx-auto align-self-end">
+            <p class="text-left">
                 After only {{ 2021 | minus : 2009}} years,
             </p>
-            <h1 class="display-1 text-light wow bounceInDown" data-wow-delay="1s">
+            <h1 class="display-3">
                 Dr. Shawna Ellis &amp;<br>Mr. Matthew Roberts
             </h1>
-            <h2 class="text-center wow bounceIn" data-wow-delay="2s">are getting married.</h2>
-            <a class="btn btn-secondary wow flipInX" data-wow-delay="3s" href="#yesway">
-                <i class="fas fa-chevron-down"></i>
-                What? They barely know each other!
-                <i class="fas fa-chevron-down"></i>
-            </a>
+            <h2 class="text-center">are getting married.</h2>
         </div>
     </div>
 </section>
 <div class="container-fluid px-0" style="margin-bottom: -3rem;">
-    <div class="row no-gutters">
-        <div id="yesway" class="hero col col-12 bg-dark" style="height: 100vh;">
+    <div id="yesway" class="row no-gutters">
+        <div id="hero12" class="hero hero-70 col-md-4 d-none d-sm-none d-md-block"></div>
+        <div id="hero13" class="hero hero-70 col-12 col-md-5"></div>
+        <div id="hero14" class="hero hero-70 col-md-3 d-none d-sm-none d-md-block"></div>
+        <div class="bg-secondary hero hero-30 col-3 col-md-3 d-none d-sm-none d-md-block">
             <div class="row no-gutters h-100 align-items-center">
                 <div class="col">
-                    <div class="px-3 px-md-5 text-center text-white">
-                        <div class="py-5">
-                            <h2 id="when" class="display-4">I KNOW RIGHT?!</h2>
-                            <p class="lead" data-wow-delay="1s">They&apos;re moving so fast&hellip;</p>
-                            <a class="btn btn-secondary wow flipInX" data-wow-delay="1s" href="#when">
-                                <i class="fas fa-chevron-down"></i>
-                                When is this unexpected thing happening?!
-                                <i class="fas fa-chevron-down"></i>
-                            </a>
-                        </div>
-                   </div>
+                    <div class="px-3 px-md-5 py-5 text-center text-white">
+                        <h3>&#129045; Shawna Ellis</h3>
+                    </div>
                 </div>
             </div>
         </div>
-        <div id="hero1" class="hero col-12 col-md-8 col-lg-6 bg-primary">
+        <div class="bg-dark hero hero-30 col-12 col-md-6">
+            <div class="row no-gutters h-100 align-items-center">
+                <div class="col">
+                    <div class="px-3 px-md-5 py-md-5 text-center text-white">
+                        <p class="lead">They&apos;re moving too fast&hellip;</p>
+                        <a class="btn btn-secondary wow flipInX" href="#hero1">
+                            <i class="fas fa-chevron-down"></i>
+                            When is this unexpected thing happening
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-primary hero hero-30 col-3 col-md-3 d-none d-sm-none d-md-block">
+            <div class="row no-gutters h-100 align-items-center">
+                <div class="col">
+                    <div class="px-3 px-md-5 py-5 text-center text-white">
+                        <h3>Matthew Roberts &#129045;</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="hero1" class="hero col-12 col-md-8 col-lg-4 col-xl-6 bg-primary">
             <div class="row no-gutters h-100 align-items-center">
                 <div class="col">
                     <div class="px-3 px-md-5 text-center text-white">
                         <div class="py-3">
-                            <h2 class="display-3">August 2021</h2>
-                            <a class="btn btn-secondary wow flipInX" data-wow-delay="1s" href="#hero5">
-                                <i class="fas fa-chevron-down"></i>
-                                Details!
-                                <i class="fas fa-chevron-down"></i>
-                            </a>
+                            <h2 class="display-3" data-wow-delay="1s">August 2021</h2>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="hero2" class="hero col-6 col-md-4 col-lg-3"></div>
+        <div id="hero2" class="hero col-6 col-md-4 col-lg-5 col-xl-3"></div>
         <div id="hero3" class="hero col-6 col-md-4 col-lg-3"></div>
 
         <div id="hero4" class="hero col-12 col-md-4"></div>
@@ -68,88 +76,60 @@ layout: default
                     <div class="px-3 px-md-5 text-center text-white">
                         <div class="py-3">
                             <h2 class="display-4">Where?</h2>
-                            <h3>The Residence of David &amp; Judith Roberts</h3>
+                            <p class="lead">The Roberts Residence<br>Parrsboro, Nova Scotia</p>
+                            <a class="btn btn-primary wow flipInX" href="#hero6">
+                                <i class="fas fa-chevron-down"></i>
+                                Details
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="hero6" class="hero col-6 col-md-4"></div>
-        <div id="hero7" class="hero col-6 col-md-3"></div>
-        <div id="hero8" class="hero col-12 col-md-5 col-lg-3 col-xl-2"></div>
-        <div id="hero9" class="hero col-12 col-md-4 col-lg-3 col-xl-2 bg-light">
+        <div id="hero6" class="hero col-6 col-md-3 col-lg-4"></div>
+        <div class="hero col-6 col-md-6 col-lg-2">
+            <div class="row no-gutters">
+                <div id="hero7" class="hero hero-25 col-6 col-lg-12"></div>
+                <div id="hero15" class="hero hero-25 col-6 col-md-5 col-lg-12"></div>
+            </div>
+        </div>
+        <div id="hero8" class="hero col-md-3 col-lg-3 col-xl-3"></div>
+        <div id="hero9" class="hero col-12 col-md-4 col-lg-3 col-xl-3 bg-light">
             <div class="row no-gutters h-100 align-items-center">
                 <div class="col">
-                    <div class="px-3 text-dark">
-                        <div class="py-5">
-                            <h2 class="display-4">What?</h2>
-                            <p>Say some words, have a good time.*</p>
-                            <ul class="list-unstyled">
-                                <li>
-                                    Dinner by Wild Caraway <a href="https://www.instagram.com/wildcaraway/" target="_blank"><i class="fab fa-instagram fa-fw"></i></a>
-                                </li>
-                                <li>
-                                    Wine by Benjamin Bridge
-                                    <a href="https://www.instagram.com/benjaminbridge/" target="_blank"><i class="fab fa-instagram fa-fw"></i></a>
-                                </li>
-                                <li>
-                                    Cider by Annapolis Cider Co
-                                    <a href="https://www.instagram.com/drinkannapolis/" target="_blank"><i class="fab fa-instagram fa-fw"></i></a>
-                                </li>
-                                <li>
-                                    Beer by Two Islands Brewing
-                                    <a href="https://www.instagram.com/twoislandsbrewingco/" target="_blank"><i class="fab fa-instagram fa-fw"></i></a>
-                                </li>
-                            </ul>
-                            <p class="small pt-5">*Subject to COVID-19 changes.</p>
-                        </div>
+                    <div class="px-3 py-3 py-xxl-5 text-dark">
+                        <h2 class="display-4">What?</h2>
+                        <p>Say some words, see some people, have a good time. It&apos;s that simple.*</p>
+                        <ul class="list-unstyled">
+                            <li>
+                                Dinner by Wild Caraway <a href="https://www.instagram.com/wildcaraway/" target="_blank"><i class="fab fa-instagram fa-fw"></i></a>
+                            </li>
+                            <li>
+                                Wine by Benjamin Bridge
+                                <a href="https://www.instagram.com/benjaminbridge/" target="_blank"><i class="fab fa-instagram fa-fw"></i></a>
+                            </li>
+                            <li>
+                                Cider by Annapolis Cider Co
+                                <a href="https://www.instagram.com/drinkannapolis/" target="_blank"><i class="fab fa-instagram fa-fw"></i></a>
+                            </li>
+                            <li>
+                                Beer by Two Islands Brewing
+                                <a href="https://www.instagram.com/twoislandsbrewingco/" target="_blank"><i class="fab fa-instagram fa-fw"></i></a>
+                            </li>
+                            <li>
+                                Bonfire on beach
+                            </li>
+                        </ul>
+                        <p class="small pt-5">*Subject to COVID-19 changes. More details to come.</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="hero10" class="hero col-6 col-md-4 col-lg-2 col-xl-3"></div>
         <div id="hero11" class="hero col-6 col-md-4 col-lg-2"></div>
-        <div class="col col-12 bg-dark">
-            <div class="row no-gutters align-items-center text-center text-white">
-                <div class="col">
-                    <div class="px-3 px-md-5 py-5 text-center text-white">
-                        <h2 class="display-4">Who?</h2>
-                   </div>
-                </div>
-            </div>
-        </div>
-        <div class="bg-secondary col-4 col-md-4">
-            <div class="row no-gutters align-items-center">
-                <div class="col col-12">
-                    <div class="px-3 px-md-5 py-5 text-center text-white">
-                        <h3>Shawna&nbsp;Ellis</h3>
-                    </div>
-                </div>
-                <div id="hero12" class="hero col-12"></div>
-            </div>
-        </div>
-        <div class="bg-dark col-4 col-md-4">
-            <div class="row no-gutters align-items-center">
-                <div class="col col-12">
-                    <div id="hero13" class="hero col-12"></div>
-                </div>
-                <div class="col col-12 text-center text-white">
-                    <div class="px-3 px-md-5 py-5 text-center text-white">
-                        <p class="small">AKA Sh-att (Sh<del>awna</del> + <del>M</del>att)</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="bg-primary col-4 col-md-4">
-            <div class="row no-gutters align-items-center">
-                <div class="col col-12">
-                    <div class="px-3 px-md-5 py-5 text-center text-white">
-                        <h3>Matthew&nbsp;Roberts</h3>
-                    </div>
-                </div>
-                <div id="hero14" class="hero col-12"></div>
-            </div>
+        <div id="hero10" class="hero col-6 col-md-4 col-lg-2"></div>
+        <div class="bg-dark col-12 text-center text-white">
+            <p class="small mt-3 mb-1">That&apos;s it.</p>
         </div>
     </div>
 </div>

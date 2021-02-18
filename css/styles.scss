@@ -22,6 +22,10 @@ h1,h2,h3,h4,h5,h6,.navbar-brand {
     margin: 0;
 }
 
+p {
+    line-height: 1rem;
+}
+
 .navbar-laravel {
   background-color: $white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
@@ -30,17 +34,23 @@ h1,h2,h3,h4,h5,h6,.navbar-brand {
 #hero {
     // background-image: url('/images/sweet-ice-cream-photography-90425-unsplash.jpg');
     // background-image: url('/images/emerald-lake.jpg');
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%),
-        url('/images/rock-house.jpg');
+    // background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%),  url('/images/rock-house.jpg');
+    // background-image: url('/images/rock-house.jpg');
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5) 25%, rgba(255,255,255,0) 40%, rgba(255,255,255,0) 100%), url('/images/rock-house.jpg');
     background-position: center center;
     background-size: cover;
     height: 100vh;
+
+    // #hero-text {
+    //     background-color: rgba(0, 0, 0, 0.8);
+    // }
 
     p, h1, h2 {
         color: $light;
         font-family: 'Raleway', sans-serif;
         font-weight: 300;
         font-style: normal;
+        text-shadow: 1px 1px 5px #2D3133;
     }
 
     h2 {
@@ -62,6 +72,15 @@ h1,h2,h3,h4,h5,h6,.navbar-brand {
     background-position: center center;
     background-size: cover;
     height: 50vh;
+}
+.hero-70 {
+    height: 70vh;
+}
+.hero-30 {
+    height: 30vh;
+}
+.hero-25 {
+    height: 25vh;
 }
 #hero2 {
     // background-image: url('/images/clem-onojeghuo-73769-unsplash.jpg');
@@ -108,14 +127,23 @@ h1,h2,h3,h4,h5,h6,.navbar-brand {
     background-image: url('/images/matt.jpg');
     background-position: center center;
 }
+#hero15 {
+    background-image: url('/images/breathe.jpg');
+    background-position: top center;
+}
 
 .jumbotron {
     background-color: $secondary;
     color: $white;
 }
 
+a.btn-primary,
 a.btn-secondary {
     color: $light;
+}
+
+.btn {
+    white-space: normal;
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -135,12 +163,22 @@ footer {
 }
 
 @include media-breakpoint-down(lg) {
-    #hero h1 {
-        font-size: 3.5rem;
+    #hero {
+        h1 {
+            font-size: 2rem;
+        }
+
+        h2 {
+            font-size: 0.9rem;
+        }
+
+        a {
+            font-size: 0.8rem;
+        }
     }
 
-    .hero {
-        height: 25vh;
+    .hero,
+    .col {
         h2 {
             font-size: 2rem;
         }
@@ -150,5 +188,24 @@ footer {
     #hero5,
     #hero9 {
         height: auto;
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .hero {
+        height: 25vh;
+    }
+
+    .hero-70 {
+        height: 70vh;
+    }
+
+    .hero-30 {
+        height: 30vh;
+    }
+
+    #hero10,
+    #hero11 {
+        height: 50vh;
     }
 }
