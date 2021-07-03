@@ -11,6 +11,10 @@
 // Bootstrap
 @import 'bootstrap/bootstrap';
 
+@import 'fontawesome/fontawesome.scss';
+@import 'fontawesome/solid.scss';
+@import 'fontawesome/brands.scss';
+
 * {
     font-style: italic;
 }
@@ -20,6 +24,12 @@ h1,h2,h3,h4,h5,h6,.navbar-brand {
     font-weight: 200 !important;
     font-style: normal;
     margin: 0;
+
+    small {
+        font-weight: 400 !important;
+        font-style: normal;
+        font-variant: small-caps;
+    }
 }
 
 p {
@@ -106,6 +116,27 @@ p {
 #hero8 {
     background-image: url('/images/prom.jpg');
     background-position: center center;
+}
+#hero9 {
+    h4 {
+        padding-top: 5px;
+    }
+    .itinerary-location,
+    .itinerary-location > a {
+        color: scale-color($secondary, $lightness: -30%);
+    }
+    .list-inline {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 300 !important;
+        font-style: normal !important;
+        color: scale-color($secondary, $lightness: -30%);
+    }
+    .list-inline-item {
+        font-style: normal !important;
+        a {
+            color: scale-color($secondary, $lightness: -30%);
+        }
+    }
 }
 #hero10 {
     background-image: url('/images/wut.jpg');

@@ -31,7 +31,7 @@ $success:       $green !default;
 $info:          $primary;
 $warning:       $orange !default;
 $danger:        #fcd4cf;
-$light:         #fff; 
+$light:         #fff;
 $dark:          $primary;
 
 $body-bg: $light;
@@ -41,3 +41,5 @@ $body-color: $dark;
 $font-family-sans-serif: 'Lora', serif;
 $font-size-base: 0.9rem;
 $line-height-base: 1.6;
+
+$fa-font-path: "../webfonts";
